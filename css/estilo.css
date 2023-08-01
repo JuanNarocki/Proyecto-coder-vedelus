@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:content-box;
+}
+body{
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.navbar{
+    background-color:rgb(11, 109, 109) ;
+}
+.logo-vedelus{
+    padding: 10px;
+}
+.nombre{
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+.nav-link{
+    color: white;
+}
+
+.orden{
+    margin-left: 250px;
+    margin-right: 250px;
+    min-height: calc(100vh - 163px);    
+}
+.foto-header{
+    display: flex;
+    filter: brightness(80%);
+    border: 5px rgb(11, 109, 109) double;
+    align-content: end;
+    margin-top: 5px;
+}
+.foto-header:hover{
+    filter: brightness(100%);
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 210px;
+    border: solid 2px grey;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.card{
+    display: block;
+    background-color: aquamarine;
+}
+.card-img-top{
+    width: 11rem;
+}
+.producto-img{
+    align-items: center;
+    padding: 5px;
+    height: 200px;
+}
+h3{
+    font-size: 1.2rem;
+    font-weight:normal ;
+}
+span{
+    font-weight: bold;
+}
+.producto-descripcion{
+    text-align: center;
+}
+/* PÁGINA IMPRESIONES ABRE*/
+.impresiones{
+    display: flex;
+    background-color: aqua;
+    border-radius: 1em;
+}
+.servicios-graficos{
+    padding: 1em;
+}
+.lista-servicios{
+    margin-left: 1em;
+}
+/* PÁGINA IMPRESIONES CIERRA*/
+/* PÁGINA QUIENES SOMOS ABRE*/
+.quienes-somos1{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+.negocio-foto {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.texto-somos{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 0.2rem;
+    width: 900px;
+    font-weight: lighter;
+}
+/* PÁGINA QUIENES SOMOS CIERRA*/
+/* PÁGINA CONTACTO ABRE*/
+.contactanos-lista{
+    list-style: none;
+    padding-top: 5px;
+    font-size: 1.2rem;
+}
+.mapa{
+    padding: 5px;
+}
+/* PÁGINA CONTACTO CIERRA*/
+/* PÁGINA PRODUCTOS ABRE*/
+.productos-principal{
+    display: grid;
+    grid-template-columns: 1fr 9fr;   
+    justify-content: stretch;
+    gap: 50px;
+}
+.sector-principal{
+    margin-right: 15rem;
+}
+.sector-principal .productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar {
+    background-color: rgb(248, 248, 248);
+}
+.sidebar ul li{ 
+    list-style-type: none;
+    margin: 5px;
+    
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* PÁGINA PRODUCTOS CIERRA*/
+footer{
+    background-color: rgb(11, 109, 109);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;   
+}
+.footer{
+    display: flex;
+    align-items: center;
+    color: snow;
+}
+
