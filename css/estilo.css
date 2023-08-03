@@ -337,9 +337,8 @@ footer{
 
 @media (min-width: 1200px){
     .principal {
-        /*
-        margin-left: 250px;
-        margin-right: 240px;
-        min-height: calc(100vh - 156px);    
+            width: 1410px;
+            margin: auto;
+        }
+
     }
-}
