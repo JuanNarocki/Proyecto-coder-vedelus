@@ -98,8 +98,6 @@ span{
   .Servicios-graficos { 
     grid-area: Servicios-graficos;
     margin-top: 1rem; 
-    border-right: 1px solid grey;
-    padding-right: 1rem;
 } 
 
   
@@ -157,6 +155,9 @@ span{
     width: 1400px;
     height: 400px;
 }
+.mapas{
+    margin-top: 0.5rem;
+}
 
 .container-contacto {  
     display: grid;
@@ -204,13 +205,15 @@ span{
 /* PÁGINA CONTACTO CIERRA*/
 /* PÁGINA PRODUCTOS ABRE*/
 
-.sector-principal{
+.sector-principal h4{
     margin-top: 1rem;
+    margin-left: 1rem ;
 }
-.categorias {
-    padding-top: 10px;
-    margin-bottom: 10px;
+
+.prod-bootstrap{
+    width: 11rem;
 }
+
 
 
 /* PÁGINA PRODUCTOS CIERRA*/
@@ -251,37 +254,60 @@ footer{
         overflow: hidden;
         padding-bottom: 5px;
     }
-    .producto img{
-        width: 150px;
+    .card-img-top{
+        width: 120px;
         height: auto;
     }
+
+    .prod-bootstrap{
+        
+        width: 9rem;
+    }
+
     /*Productos cierra*/
     /*Impresiones abre*/
     .banner-impresiones{
         width: 95%;
     }
     .container {  
+        margin: 0;
         display: flex;
         flex-direction: column;
       }
    
+
     .cards-servicios{
         display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .cards-realizamos{
-        margin-right: 30px;
+        flex-direction: column;
+      }
+      .card-servicios{
+        margin: 5px;
         display: flex;
-        justify-content: center;
-    }
-    
-    .card-realizamos{
+        flex-direction: row;
+        align-items: center;
+      }
+      .card-servicios img{
+        padding-right: 5px;
+        width: 1.8rem;
+
+      }
+      .cards-realizamos{   
         display: flex;
         flex-direction: column;
-        margin-left: 10px;
-        align-content: space-around;
-    }
+        justify-content: space-evenly;
+        
+      }
+      .card-realizamos img{
+        padding-right: 5px;
+        width: 2.3rem;
+
+      }
+      .card-realizamos{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 10px;
+      }
     /*Impresiones cierra*/
     /*Contacto abre*/
     .mapa{
@@ -309,21 +335,33 @@ footer{
     
       .cards-transporte{
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
       }
       .card-transporte{
+        margin: 5px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+      }
+      .card-transporte img{
+        padding-right: 5px;
+        width: 1.8rem;
+
       }
       .cards-contactanos{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+      }
+      .card-contactanos img{
+        padding-right: 5px;
+        width: 1.2rem;
+
       }
       .card-contactanos{
+
+        margin: 5px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
 
       }
