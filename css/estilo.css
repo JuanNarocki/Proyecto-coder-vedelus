@@ -229,6 +229,11 @@ footer{
     color: snow;
 }
 
+.footer a{
+  color: snow;
+  text-decoration: none;
+}
+
 
 /*movil*/
 @media (max-width: 576px){
