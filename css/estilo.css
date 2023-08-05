@@ -231,7 +231,7 @@ footer{
 
 
 /*movil*/
-@media (max-width: 768px){
+@media (max-width: 576px){
     /*Inicio abre*/
     .principal h2{
         text-align: center;
@@ -308,6 +308,7 @@ footer{
         margin: 0;
         margin-top: 10px;
       }
+
     /*Impresiones cierra*/
     /*Contacto abre*/
     .mapa{
@@ -369,6 +370,9 @@ footer{
         min-height: calc(100vh + 3rem);    
     }
     /*Contacto cierra*/
+    footer{
+      margin-top: 1rem;
+    }
 }
 
 /*desktop*/
