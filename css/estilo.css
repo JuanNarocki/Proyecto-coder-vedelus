@@ -1,413 +1,188 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
-    font-family: "Yantramanav", sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-main{
+  font-family: "Yantramanav", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  body header img {
+    width: 70px; }
+  body header .navbar {
+    background-color: #0b6d6d; }
+  body header .logo-vedelus {
+    padding: 10px; }
+  body header .nombre {
+    margin: 10px; }
+
+main {
   flex-grow: 1;
-}
-
-.navbar {
-    background-color: rgb(11, 109, 109);
-}
-.logo-vedelus {
-    padding: 10px;
-}
-.nombre {
-    margin: 10px;
-}
-a {
-    text-decoration: none;
-}
-
-.nav-link {
-    color: white;
-}
-
-.foto-header {
+  /*Quienes somos abre*/
+  /*Contacto abre*/ }
+  main .foto-header {
     display: flex;
-    border: 5px rgb(11, 109, 109) double;
+    border: 5px #0b6d6d double;
     align-content: end;
     margin-top: 5px;
     width: 98%;
-    height: auto;
-}
-.productos {
+    height: auto; }
+  main .categorias-index {
+    margin-top: 1rem;
+    border-bottom: 0.5px solid #e2e2e2; }
+  main .productos {
     display: flex;
     flex-wrap: wrap;
-}
-.producto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 210px;
-    border: solid 2px grey;
-    border-radius: 5px;
-    margin: 10px;
-    overflow: hidden;
-    padding-bottom: 5px;
-}
-
-.card {
-    display: block;
-}
-
-.card-img-top {
-    width: 11rem;
-}
-.producto-img {
-    align-items: center;
-    padding: 5px;
-    height: 200px;
-}
-h3 {
-    font-size: 1.2rem;
-    font-weight: normal;
-}
-span {
-    font-weight: bold;
-}
-.producto-descripcion {
-    text-align: center;
-}
-
-.categorias-index {
-    margin-top: 1rem;
-    border-bottom: 0.5px solid rgb(226, 226, 226);
-}
-.productos {
-    margin-bottom: 1rem;
-}
-
-/* PÁGINA IMPRESIONES ABRE*/
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.2fr 1.8fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "banner banner"
-        "Servicios-graficos realizamos";
-}
-
-.banner {
-    margin-top: 10px;
-    margin-bottom: 1rem;
-    grid-area: banner;
-    border-image: 5px;
-}
-.banner-impresiones {
-    border-radius: 10px;
-    width: 100%;
-}
-
-.Servicios-graficos {
-    grid-area: Servicios-graficos;
-    margin-top: 1rem;
-}
-
-.realizamos {
-    grid-area: realizamos;
-    margin-top: 1rem;
-    margin-left: 1rem;
-}
-
-.cards-servicios {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card-servicios {
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    align-items: center;
-    width:70px;
-}
-.cards-realizamos {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card-realizamos {
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    align-items: center;
-}
-.card-realizamos img{
-  width: 70px;
-}
-
-/* PÁGINA IMPRESIONES CIERRA*/
-/* PÁGINA QUIENES SOMOS ABRE*/
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card-body p {
-    font-size: large;
-}
-
-.card-quienes-somos {
-    margin-top: 2rem;
-}
-
-.nuestra-historia{
-  margin-top: 2rem;
-}
-/* PÁGINA QUIENES SOMOS CIERRA*/
-/* PÁGINA CONTACTO ABRE*/
-.mapa {
-    padding: 5px;
-    width: 1400px;
-    height: 400px;
-}
-.mapas {
-    margin-top: 0.5rem;
-}
-
-.container-contacto {
+    margin-bottom: 1rem; }
+    main .productos .producto {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 210px;
+      border: solid 1px grey;
+      border-radius: 5px;
+      margin: 10px;
+      padding-bottom: 5px; }
+      main .productos .producto .producto-img {
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        height: 10rem; }
+      main .productos .producto .producto-descripcion {
+        text-align: center; }
+        main .productos .producto .producto-descripcion h3 {
+          font-size: 1.2rem;
+          font-weight: normal; }
+        main .productos .producto .producto-descripcion span {
+          font-weight: bold; }
+  main .card-quienes-somos {
+    margin-top: 2rem; }
+    main .card-quienes-somos .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main .card-quienes-somos .card-body p {
+        font-size: large; }
+  main .nuestra-historia {
+    margin-top: 2rem; }
+  main .container-contacto {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.2fr 1.8fr;
     gap: 0px 0px;
     height: 85.5vh;
     grid-auto-flow: row;
-    grid-template-areas:
-        "mapas mapas"
-        "como-llegar contactanos";
-}
-.mapas {
-    grid-area: mapas;
-}
-.como-llegar {
-    grid-area: como-llegar;
-    border-right: 1px solid grey;
-    padding: 20px;
-}
-.contactanos {
-    grid-area: contactanos;
-    padding: 20px;
-}
+    grid-template-areas: "mapas mapas" "como-llegar contactanos"; }
+    main .container-contacto .mapas {
+      margin-top: 0.5rem;
+      grid-area: mapas; }
+      main .container-contacto .mapas .mapa {
+        padding: 5px;
+        width: 1400px;
+        height: 400px; }
+    main .container-contacto .como-llegar {
+      grid-area: como-llegar;
+      border-right: 1px solid grey;
+      padding: 20px; }
+      main .container-contacto .como-llegar .cards-transporte {
+        display: flex;
+        justify-content: space-around; }
+        main .container-contacto .como-llegar .cards-transporte .card-transporte {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+    main .container-contacto .contactanos {
+      grid-area: contactanos;
+      padding: 20px; }
+      main .container-contacto .contactanos .cards-contactanos {
+        display: flex;
+        justify-content: space-around; }
+        main .container-contacto .contactanos .cards-contactanos .card-contactanos {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
 
-.cards-transporte {
-    display: flex;
-    justify-content: space-around;
-}
-.card-transporte {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cards-contactanos {
-    display: flex;
-    justify-content: space-around;
-}
-.card-contactanos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* PÁGINA CONTACTO CIERRA*/
-/* PÁGINA PRODUCTOS ABRE*/
-.sector-principal {
-    width: 1200px;
-    margin: auto;
-}
-.sector-principal h4 {
+/*Impresiones abre*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.2fr 1.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "banner banner" "servicios-graficos realizamos"; }
+  .container .banner {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    grid-area: banner;
+    border-image: 5px; }
+    .container .banner img {
+      border-radius: 10px;
+      width: 100%; }
+  .container .servicios-graficos {
+    grid-area: servicios-graficos;
+    margin-top: 1rem; }
+    .container .servicios-graficos .cards-servicios {
+      display: flex;
+      flex-wrap: wrap; }
+      .container .servicios-graficos .cards-servicios .card-servicios {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        align-items: center; }
+        .container .servicios-graficos .cards-servicios .card-servicios img {
+          width: 70px; }
+  .container .realizamos {
+    grid-area: realizamos;
     margin-top: 1rem;
-    margin-left: 1rem;
-}
+    margin-left: 1rem; }
+    .container .realizamos .cards-realizamos {
+      display: flex;
+      flex-wrap: wrap; }
+      .container .realizamos .cards-realizamos .card-realizamos {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        align-items: center; }
+        .container .realizamos .cards-realizamos .card-realizamos img {
+          width: 70px; }
 
-.prod-bootstrap {
-    width: 11rem;
-}
-.card-img-top {
-    width: 10rem;
-}
-.banner-promo-filgo{
-  width: 1160px;
-}
-.banner-promo-filgo img{
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 1160px;
-  border-radius: 10px;
-}
+/*Impresiones cierra*/
+/*Productos abre*/
+.sector-principal {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 2rem; }
+  .sector-principal .banner-promo-filgo {
+    width: 1160px; }
+    .sector-principal .banner-promo-filgo img {
+      margin: 0 auto;
+      margin-top: 10px;
+      width: 1160px;
+      border-radius: 10px; }
+  .sector-principal h4 {
+    margin-top: 1rem;
+    margin-left: 1rem; }
+  .sector-principal .prod-bootstrap {
+    width: 11rem; }
+    .sector-principal .prod-bootstrap img {
+      width: 10rem; }
 
+/*Productos cierra*/
+@media (min-width: 1200px) {
+  main {
+    width: 1410px;
+    margin: auto; } }
 
-/* PÁGINA PRODUCTOS CIERRA*/
 footer {
-    background-color: rgb(11, 109, 109);
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
-.footer {
+  background-color: #0b6d6d;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px; }
+  footer .footer {
     display: flex;
     align-items: center;
-    color: snow;
-}
-
-.footer a {
-    color: snow;
-    text-decoration: none;
-}
-
-/*movil*/
-@media (max-width: 576px) {
-    /*Inicio abre*/
-    main h2 {
-        text-align: center;
-    }
-    /*Inicio cierra*/
-    /*Productos abre*/
-    .productos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .producto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 90%;
-        border: solid 2px grey;
-        border-radius: 5px;
-        overflow: hidden;
-        padding-bottom: 5px;
-    }
-    .card-img-top {
-        width: 120px;
-        height: auto;
-    }
-
-    .prod-bootstrap {
-        width: 9rem;
-    }
-
-
-    /*Productos cierra*/
-    /*Impresiones abre*/
-    .banner-impresiones {
-        width: 95%;
-    }
-    .container {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cards-servicios {
-        display: flex;
-        flex-direction: column;
-    }
-    .card-servicios {
-        margin: 5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .card-servicios img {
-        padding-right: 5px;
-        width: 1.8rem;
-    }
-    .cards-realizamos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .card-realizamos img {
-        padding-right: 5px;
-        width: 2.8rem;
-    }
-    .card-realizamos {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        margin-top: 10px;
-    }
-
-    /*Impresiones cierra*/
-    /*Contacto abre*/
-    .mapa {
-        width: 98%;
-    }
-    .container-contacto {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-            "mapas"
-            "como-llegar"
-            "contactanos";
-    }
-    .mapas {
-        grid-area: mapas;
-    }
-    .como-llegar {
-        grid-area: como-llegar;
-    }
-    .contactanos {
-        grid-area: contactanos;
-    }
-
-    .cards-transporte {
-        display: flex;
-        flex-direction: column;
-    }
-    .card-transporte {
-        margin: 5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .card-transporte img {
-        padding-right: 5px;
-        width: 3rem;
-    }
-    .cards-contactanos {
-        display: flex;
-        flex-direction: column;
-    }
-    .card-contactanos img {
-        padding-right: 5px;
-        width: 1.8rem;
-    }
-    .card-contactanos {
-        margin: 5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    /*Contacto cierra*/
-    footer {
-        margin-top: 1rem;
-    }
-      /*quienes somos*/
-      .d-flex{
-        flex-direction: column-reverse;
-      }
-}
-
-/*desktop*/
-
-@media (min-width: 1200px) {
-    main {
-        width: 1410px;
-        margin: auto;
-    }
-}
+    color: snow; }
+    footer .footer a {
+      color: snow;
+      text-decoration: none; }

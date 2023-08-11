@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Yantramanav", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    header {
+        img {
+            width: 70px;
+        }
+        .navbar {
+            background-color: #0b6d6d;
+        }
+        .logo-vedelus {
+            padding: 10px;
+        }
+        .nombre {
+            margin: 10px;
+        }
+    }
+}
+main {
+    flex-grow: 1;
+    .foto-header {
+        display: flex;
+        border: 5px rgb(11, 109, 109) double;
+        align-content: end;
+        margin-top: 5px;
+        width: 98%;
+        height: auto;
+    }
+    .categorias-index {
+        margin-top: 1rem;
+        border-bottom: 0.5px solid rgb(226, 226, 226);
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        .producto {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 210px;
+            border: solid 1px grey;
+            border-radius: 5px;
+            margin: 10px;
+            padding-bottom: 5px;
+            .producto-img {
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                height: 10rem;
+            }
+            .producto-descripcion {
+                text-align: center;
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: normal;
+                }
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    /*Quienes somos abre*/
+
+    .card-quienes-somos {
+        margin-top: 2rem;
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+                font-size: large;
+            }
+        }
+    }
+    .nuestra-historia {
+        margin-top: 2rem;
+    }
+
+    /*Contacto abre*/
+
+    .container-contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.2fr 1.8fr;
+        gap: 0px 0px;
+        height: 85.5vh;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "mapas mapas"
+            "como-llegar contactanos";
+        .mapas {
+            margin-top: 0.5rem;
+            grid-area: mapas;
+            .mapa {
+                padding: 5px;
+                width: 1400px;
+                height: 400px;
+            }
+        }
+        .como-llegar {
+            grid-area: como-llegar;
+            border-right: 1px solid grey;
+            padding: 20px;
+            .cards-transporte {
+                display: flex;
+                justify-content: space-around;
+                .card-transporte {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+        .contactanos {
+            grid-area: contactanos;
+            padding: 20px;
+            .cards-contactanos {
+                display: flex;
+                justify-content: space-around;
+                .card-contactanos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+/*Impresiones abre*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.2fr 1.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "banner banner"
+        "servicios-graficos realizamos";
+    .banner {
+        margin-top: 10px;
+        margin-bottom: 1rem;
+        grid-area: banner;
+        border-image: 5px;
+        img {
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+    .servicios-graficos {
+        grid-area: servicios-graficos;
+        margin-top: 1rem;
+        .cards-servicios {
+            display: flex;
+            flex-wrap: wrap;
+            .card-servicios {
+                display: flex;
+                flex-direction: column;
+                margin: 10px auto;
+                align-items: center;
+                img {
+                    width: 70px;
+                }
+            }
+        }
+    }
+    .realizamos {
+        grid-area: realizamos;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        .cards-realizamos {
+            display: flex;
+            flex-wrap: wrap;
+            .card-realizamos {
+                display: flex;
+                flex-direction: column;
+                margin: 10px auto;
+                align-items: center;
+                img {
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+/*Impresiones cierra*/
+
+/*Productos abre*/
+.sector-principal {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 2rem;
+    .banner-promo-filgo {
+        width: 1160px;
+        img {
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 1160px;
+            border-radius: 10px;
+        }
+    }
+    h4 {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .prod-bootstrap {
+        width: 11rem;
+        img {
+            width: 10rem;
+        }
+    }
+}
+
+/*Productos cierra*/
+
+@media (min-width: 1200px) {
+    main {
+        width: 1410px;
+        margin: auto;
+    }
+}
+
+footer {
+    background-color: rgb(11, 109, 109);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    .footer {
+        display: flex;
+        align-items: center;
+        color: snow;
+        a {
+            color: snow;
+            text-decoration: none;
+        }
+    }
+}
