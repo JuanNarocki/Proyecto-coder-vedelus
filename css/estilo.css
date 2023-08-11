@@ -1,31 +1,36 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    font-family: 'Yantramanav', sans-serif;
+body {
+    font-family: "Yantramanav", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+  flex-grow: 1;
 }
 
-.navbar{
-    background-color:rgb(11, 109, 109) ;
+.navbar {
+    background-color: rgb(11, 109, 109);
 }
-.logo-vedelus{
+.logo-vedelus {
     padding: 10px;
 }
-.nombre{
+.nombre {
     margin: 10px;
 }
-a{
+a {
     text-decoration: none;
 }
 
-.nav-link{
+.nav-link {
     color: white;
 }
 
-
-.foto-header{
+.foto-header {
     display: flex;
     border: 5px rgb(11, 109, 109) double;
     align-content: end;
@@ -33,11 +38,11 @@ a{
     width: 98%;
     height: auto;
 }
-.productos{
+.productos {
     display: flex;
     flex-wrap: wrap;
 }
-.producto{
+.producto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,213 +55,230 @@ a{
     padding-bottom: 5px;
 }
 
-.card{
+.card {
     display: block;
 }
 
-.card-img-top{
+.card-img-top {
     width: 11rem;
 }
-.producto-img{
+.producto-img {
     align-items: center;
     padding: 5px;
     height: 200px;
 }
-h3{
+h3 {
     font-size: 1.2rem;
-    font-weight:normal ;
+    font-weight: normal;
 }
-span{
+span {
     font-weight: bold;
 }
-.producto-descripcion{
+.producto-descripcion {
     text-align: center;
 }
 
-.categorias-index{
-  margin-top: 1rem;
-  border-bottom: 0.5px solid grey;
+.categorias-index {
+    margin-top: 1rem;
+    border-bottom: 0.5px solid rgb(226, 226, 226);
 }
-.productos{
-  margin-bottom: 1rem;
+.productos {
+    margin-bottom: 1rem;
 }
 
 /* PÁGINA IMPRESIONES ABRE*/
-.container {  
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.2fr 1.8fr;
     gap: 0px 0px;
-    height: 84vh;
     grid-auto-flow: row;
     grid-template-areas:
-      "banner banner"
-      "Servicios-graficos realizamos";
-  }
-  
-  .banner { 
-    grid-area: banner; 
+        "banner banner"
+        "Servicios-graficos realizamos";
+}
+
+.banner {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    grid-area: banner;
     border-image: 5px;
 }
-    .banner-impresiones{
+.banner-impresiones {
     border-radius: 10px;
     width: 100%;
 }
-  
-  .Servicios-graficos { 
+
+.Servicios-graficos {
     grid-area: Servicios-graficos;
-    margin-top: 1rem; 
-} 
+    margin-top: 1rem;
+}
 
-  
-  .realizamos { 
-    grid-area: realizamos; 
-    margin-top: 1rem; 
+.realizamos {
+    grid-area: realizamos;
+    margin-top: 1rem;
     margin-left: 1rem;
-    
 }
 
-.cards-servicios{
+.cards-servicios {
     display: flex;
     flex-wrap: wrap;
-
 }
 
-.card-servicios{
+.card-servicios {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    align-items: center;
+    width:70px;
+}
+.cards-realizamos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-realizamos {
     display: flex;
     flex-direction: column;
     margin: 10px auto;
     align-items: center;
 }
-.cards-realizamos{
-    display: flex;
-    flex-wrap: wrap;
-
+.card-realizamos img{
+  width: 70px;
 }
 
-.card-realizamos{
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    align-items: center;
-}
-  
 /* PÁGINA IMPRESIONES CIERRA*/
 /* PÁGINA QUIENES SOMOS ABRE*/
-.card-body{
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.card-body p{
+.card-body p {
     font-size: large;
 }
 
-.card-quienes-somos{
-    margin-top: 5px;
+.card-quienes-somos {
+    margin-top: 2rem;
+}
+
+.nuestra-historia{
+  margin-top: 2rem;
 }
 /* PÁGINA QUIENES SOMOS CIERRA*/
 /* PÁGINA CONTACTO ABRE*/
-.mapa{
+.mapa {
     padding: 5px;
     width: 1400px;
     height: 400px;
 }
-.mapas{
+.mapas {
     margin-top: 0.5rem;
 }
 
-.container-contacto {  
+.container-contacto {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.2fr 1.8fr;
     gap: 0px 0px;
-    height: 84vh;
+    height: 85.5vh;
     grid-auto-flow: row;
     grid-template-areas:
-      "mapas mapas"
-      "como-llegar contactanos";
-  }
-  .mapas{
+        "mapas mapas"
+        "como-llegar contactanos";
+}
+.mapas {
     grid-area: mapas;
-  }
-  .como-llegar{
+}
+.como-llegar {
     grid-area: como-llegar;
     border-right: 1px solid grey;
     padding: 20px;
-
-  }
-  .contactanos{
+}
+.contactanos {
     grid-area: contactanos;
     padding: 20px;
-  }
+}
 
-  .cards-transporte{
+.cards-transporte {
     display: flex;
     justify-content: space-around;
-  }
-  .card-transporte{
+}
+.card-transporte {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .cards-contactanos{
+}
+.cards-contactanos {
     display: flex;
     justify-content: space-around;
-  }
-  .card-contactanos{
+}
+.card-contactanos {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 /* PÁGINA CONTACTO CIERRA*/
 /* PÁGINA PRODUCTOS ABRE*/
-
-.sector-principal h4{
+.sector-principal {
+    width: 1200px;
+    margin: auto;
+}
+.sector-principal h4 {
     margin-top: 1rem;
-    margin-left: 1rem ;
+    margin-left: 1rem;
 }
 
-.prod-bootstrap{
+.prod-bootstrap {
     width: 11rem;
 }
-
+.card-img-top {
+    width: 10rem;
+}
+.banner-promo-filgo{
+  width: 1160px;
+}
+.banner-promo-filgo img{
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 1160px;
+  border-radius: 10px;
+}
 
 
 /* PÁGINA PRODUCTOS CIERRA*/
-footer{
+footer {
     background-color: rgb(11, 109, 109);
     display: flex;
     justify-content: space-around;
-    padding: 10px;   
+    padding: 10px;
 }
-.footer{
+.footer {
     display: flex;
     align-items: center;
     color: snow;
 }
 
-.footer a{
-  color: snow;
-  text-decoration: none;
+.footer a {
+    color: snow;
+    text-decoration: none;
 }
 
-
 /*movil*/
-@media (max-width: 576px){
+@media (max-width: 576px) {
     /*Inicio abre*/
-    main h2{
+    main h2 {
         text-align: center;
     }
     /*Inicio cierra*/
     /*Productos abre*/
-    .productos{
+    .productos {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .producto{
+    .producto {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -267,133 +289,125 @@ footer{
         overflow: hidden;
         padding-bottom: 5px;
     }
-    .card-img-top{
+    .card-img-top {
         width: 120px;
         height: auto;
     }
 
-    .prod-bootstrap{
-        
+    .prod-bootstrap {
         width: 9rem;
     }
 
+
     /*Productos cierra*/
     /*Impresiones abre*/
-    .banner-impresiones{
+    .banner-impresiones {
         width: 95%;
     }
-    .container {  
+    .container {
         margin: 0;
         display: flex;
         flex-direction: column;
-      }
-   
+    }
 
-    .cards-servicios{
+    .cards-servicios {
         display: flex;
         flex-direction: column;
-      }
-      .card-servicios{
+    }
+    .card-servicios {
         margin: 5px;
         display: flex;
         flex-direction: row;
         align-items: center;
-      }
-      .card-servicios img{
+    }
+    .card-servicios img {
         padding-right: 5px;
         width: 1.8rem;
-
-      }
-      .cards-realizamos{   
+    }
+    .cards-realizamos {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        
-      }
-      .card-realizamos img{
+    }
+    .card-realizamos img {
         padding-right: 5px;
-        width: 2.3rem;
-
-      }
-      .card-realizamos{
+        width: 2.8rem;
+    }
+    .card-realizamos {
         display: flex;
         flex-direction: column;
         margin: 0;
         margin-top: 10px;
-      }
+    }
 
     /*Impresiones cierra*/
     /*Contacto abre*/
-    .mapa{
+    .mapa {
         width: 98%;
     }
-    .container-contacto {  
+    .container-contacto {
+        height: 100vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "mapas"
-        "como-llegar"
-        "contactanos";
-      }
-      .mapas{
+        grid-template-areas:
+            "mapas"
+            "como-llegar"
+            "contactanos";
+    }
+    .mapas {
         grid-area: mapas;
-      }
-      .como-llegar{
+    }
+    .como-llegar {
         grid-area: como-llegar;
-    
-      }
-      .contactanos{
+    }
+    .contactanos {
         grid-area: contactanos;
-      }
-    
-      .cards-transporte{
+    }
+
+    .cards-transporte {
         display: flex;
         flex-direction: column;
-      }
-      .card-transporte{
+    }
+    .card-transporte {
         margin: 5px;
         display: flex;
         flex-direction: row;
         align-items: center;
-      }
-      .card-transporte img{
+    }
+    .card-transporte img {
+        padding-right: 5px;
+        width: 3rem;
+    }
+    .cards-contactanos {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-contactanos img {
         padding-right: 5px;
         width: 1.8rem;
-
-      }
-      .cards-contactanos{
-        display: flex;
-        flex-direction: column;
-      }
-      .card-contactanos img{
-        padding-right: 5px;
-        width: 1.2rem;
-
-      }
-      .card-contactanos{
-
+    }
+    .card-contactanos {
         margin: 5px;
         display: flex;
         flex-direction: row;
         align-items: center;
-
-      }
-      main {
-        min-height: calc(100vh + 3rem);    
     }
     /*Contacto cierra*/
-    footer{
-      margin-top: 1rem;
+    footer {
+        margin-top: 1rem;
     }
+      /*quienes somos*/
+      .d-flex{
+        flex-direction: column-reverse;
+      }
 }
 
 /*desktop*/
 
-@media (min-width: 1200px){
-  main {
-            width: 1410px;
-            margin: auto;
-        }
-
+@media (min-width: 1200px) {
+    main {
+        width: 1410px;
+        margin: auto;
     }
+}
