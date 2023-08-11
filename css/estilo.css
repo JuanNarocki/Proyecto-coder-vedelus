@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing:content-box;
+  box-sizing:border-box;
 }
 body{
     font-family: 'Yantramanav', sans-serif;
@@ -27,13 +27,11 @@ a{
 
 .foto-header{
     display: flex;
-    filter: brightness(80%);
     border: 5px rgb(11, 109, 109) double;
     align-content: end;
     margin-top: 5px;
-}
-.foto-header:hover{
-    filter: brightness(100%);
+    width: 98%;
+    height: auto;
 }
 .productos{
     display: flex;
@@ -74,6 +72,15 @@ span{
 .producto-descripcion{
     text-align: center;
 }
+
+.categorias-index{
+  margin-top: 1rem;
+  border-bottom: 0.5px solid grey;
+}
+.productos{
+  margin-bottom: 1rem;
+}
+
 /* PÁGINA IMPRESIONES ABRE*/
 .container {  
     display: grid;
@@ -93,6 +100,7 @@ span{
 }
     .banner-impresiones{
     border-radius: 10px;
+    width: 100%;
 }
   
   .Servicios-graficos { 
@@ -238,7 +246,7 @@ footer{
 /*movil*/
 @media (max-width: 576px){
     /*Inicio abre*/
-    .principal h2{
+    main h2{
         text-align: center;
     }
     /*Inicio cierra*/
@@ -253,7 +261,7 @@ footer{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 170px;
+        width: 90%;
         border: solid 2px grey;
         border-radius: 5px;
         overflow: hidden;
@@ -371,7 +379,7 @@ footer{
         align-items: center;
 
       }
-      .principal {
+      main {
         min-height: calc(100vh + 3rem);    
     }
     /*Contacto cierra*/
@@ -383,7 +391,7 @@ footer{
 /*desktop*/
 
 @media (min-width: 1200px){
-    .principal {
+  main {
             width: 1410px;
             margin: auto;
         }
