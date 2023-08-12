@@ -56,6 +56,13 @@ main {
           font-weight: normal; }
         main .productos .producto .producto-descripcion span {
           font-weight: bold; }
+  main .marcas {
+    margin-bottom: 2rem; }
+    main .marcas h2 {
+      border-bottom: 0.5px solid #e2e2e2; }
+    main .marcas .logos-marcas {
+      display: flex;
+      justify-content: space-between; }
   main .card-quienes-somos {
     margin-top: 2rem; }
     main .card-quienes-somos .card-body {

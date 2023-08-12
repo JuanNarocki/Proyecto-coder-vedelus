@@ -68,6 +68,16 @@ main {
             }
         }
     }
+    .marcas{
+        margin-bottom: 2rem;
+        h2{
+            border-bottom: 0.5px solid rgb(226, 226, 226);
+        }
+        .logos-marcas{
+            display: flex;
+            justify-content: space-between;    
+        }
+    }
 
     /*Quienes somos abre*/
 
