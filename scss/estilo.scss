@@ -1,3 +1,4 @@
+@import "./mediaqueries";
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +25,7 @@ body {
     }
 }
 main {
+    
     flex-grow: 1;
     .foto-header {
         display: flex;
@@ -66,6 +68,11 @@ main {
                     font-weight: bold;
                 }
             }
+        }
+    }
+    h2{
+        @include mobile{
+            text-align: center;
         }
     }
     .marcas{
@@ -150,7 +157,7 @@ main {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.2fr 1.8fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -169,6 +176,7 @@ main {
     .servicios-graficos {
         grid-area: servicios-graficos;
         margin-top: 1rem;
+        margin-right: 3rem;
         .cards-servicios {
             display: flex;
             flex-wrap: wrap;
@@ -201,6 +209,7 @@ main {
             }
         }
     }
+
 }
 /*Impresiones cierra*/
 
@@ -224,20 +233,10 @@ main {
     }
     .prod-bootstrap {
         width: 11rem;
-        img {
-            width: 10rem;
-        }
     }
 }
 
 /*Productos cierra*/
-
-@media (min-width: 1200px) {
-    main {
-        width: 1410px;
-        margin: auto;
-    }
-}
 
 footer {
     background-color: rgb(11, 109, 109);
@@ -254,3 +253,51 @@ footer {
         }
     }
 }
+
+@media (max-width: 576px) {
+    main{
+        h2{
+            text-align: center;
+        }
+        .marcas{
+            .logos-marcas{
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    width: 10rem;
+                }
+            }
+        }
+        .productos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .producto {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10rem;
+                flex-direction: column;
+                border: solid 1px grey;
+                border-radius: 5px;
+                overflow: hidden;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    .sector-principal{
+        .banner-promo-filgo{
+            margin: auto;
+            justify-content: center;
+            img{
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        width: 1400px;
+        margin: auto;
+    }
+  }

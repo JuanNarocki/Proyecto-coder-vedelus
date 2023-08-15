@@ -56,6 +56,9 @@ main {
           font-weight: normal; }
         main .productos .producto .producto-descripcion span {
           font-weight: bold; }
+  @media screen and (max-width: 576px) {
+    main h2 {
+      text-align: center; } }
   main .marcas {
     margin-bottom: 2rem; }
     main .marcas h2 {
@@ -114,7 +117,7 @@ main {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1.2fr 1.8fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "banner banner" "servicios-graficos realizamos"; }
@@ -128,7 +131,8 @@ main {
       width: 100%; }
   .container .servicios-graficos {
     grid-area: servicios-graficos;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    margin-right: 3rem; }
     .container .servicios-graficos .cards-servicios {
       display: flex;
       flex-wrap: wrap; }
@@ -172,15 +176,8 @@ main {
     margin-left: 1rem; }
   .sector-principal .prod-bootstrap {
     width: 11rem; }
-    .sector-principal .prod-bootstrap img {
-      width: 10rem; }
 
 /*Productos cierra*/
-@media (min-width: 1200px) {
-  main {
-    width: 1410px;
-    margin: auto; } }
-
 footer {
   background-color: #0b6d6d;
   display: flex;
@@ -193,3 +190,34 @@ footer {
     footer .footer a {
       color: snow;
       text-decoration: none; }
+
+@media (max-width: 576px) {
+  main h2 {
+    text-align: center; }
+  main .marcas .logos-marcas {
+    display: flex;
+    flex-wrap: wrap; }
+    main .marcas .logos-marcas img {
+      width: 10rem; }
+  main .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    main .productos .producto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10rem;
+      flex-direction: column;
+      border: solid 1px grey;
+      border-radius: 5px;
+      overflow: hidden;
+      padding-bottom: 5px; }
+  .sector-principal .banner-promo-filgo {
+    margin: auto;
+    justify-content: center; } }
+
+@media (min-width: 1400px) {
+  main {
+    width: 1400px;
+    margin: auto; } }
