@@ -1,17 +1,158 @@
-@mixin tablet{
-    @media screen and (max-width: 780px){
-        @content;
+@media (max-width: 576px) {
+    main {
+        h2 {
+            text-align: center;
+        }
+        .marcas {
+            .logos-marcas {
+                display: flex;
+                flex-wrap: wrap;
+                img {
+                    width: 10rem;
+                }
+            }
+        }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .producto {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10rem;
+                flex-direction: column;
+                border: solid 1px grey;
+                border-radius: 5px;
+                overflow: hidden;
+                padding-bottom: 5px;
+            }
+        }
+
+        /*Contacto*/
+        .container-contacto {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+                "mapas"
+                "como-llegar"
+                "contactanos";
+            .mapas {
+                grid-area: mapas;
+                .mapa {
+                    width: 98%;
+                }
+            }
+            .como-llegar {
+                grid-area: como-llegar;
+                .cards-transporte {
+                    display: flex;
+                    flex-direction: column;
+                    .card-transporte {
+                        margin: 5px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        img {
+                            padding-right: 5px;
+                            width: 3rem;
+                        }
+                    }
+                }
+            }
+            .contactanos {
+                grid-area: contactanos;
+                .cards-contactanos {
+                    display: flex;
+                    flex-direction: column;
+                    .card-contactanos {
+                        margin: 5px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        img {
+                            padding-right: 5px;
+                            width: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            margin-top: 1rem;
+        }
+        .nuestra-historia {
+            .d-flex {
+                flex-direction: column-reverse;
+            }
+        }
+        
+    }
+    
+    /*Impresiones*/
+    .container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        .servicios-graficos {
+            .cards-servicios {
+                display: flex;
+                flex-direction: column;
+                .card-servicios {
+                    margin: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    img {
+                        padding-right: 5px;
+                        width: 1.8rem;
+                    }
+                }
+            }
+        }
+        .realizamos {
+            .cards-realizamos {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .card-realizamos {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+                    margin-top: 10px;
+                    img {
+                        padding-right: 5px;
+                        width: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Productos*/
+    .sector-principal {
+        .banner-promo-filgo {
+            margin: auto;
+            justify-content: center;
+            img {
+            }
+        }
+        .prod-bootstrap {
+            width: 9rem;
+        }
+        .banner {
+            .banner-impresiones {
+                width: 95%;
+            }
+        }
     }
 }
-
-@mixin mobile{
-    @media screen and (max-width: 576px){
-        @content;
-    }
-}
-
-@mixin desktop{
-    @media (min-width: 1200){
-        @content;
+/*Desktop*/
+@media (min-width: 1400px) {
+    main {
+        width: 1400px;
+        margin: auto;
     }
 }

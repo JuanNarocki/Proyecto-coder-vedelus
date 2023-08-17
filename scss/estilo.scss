@@ -1,9 +1,7 @@
-@import "./mediaqueries";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import './resets';
+@import './variables';
+
+
 body {
     font-family: "Yantramanav", sans-serif;
     height: 100vh;
@@ -14,7 +12,7 @@ body {
             width: 70px;
         }
         .navbar {
-            background-color: #0b6d6d;
+            background-color: $colorprincipal;
         }
         .logo-vedelus {
             padding: 10px;
@@ -29,7 +27,7 @@ main {
     flex-grow: 1;
     .foto-header {
         display: flex;
-        border: 5px rgb(11, 109, 109) double;
+        border: 5px $colorprincipal double;
         align-content: end;
         margin-top: 5px;
         width: 98%;
@@ -68,11 +66,6 @@ main {
                     font-weight: bold;
                 }
             }
-        }
-    }
-    h2{
-        @include mobile{
-            text-align: center;
         }
     }
     .marcas{
@@ -120,7 +113,8 @@ main {
             grid-area: mapas;
             .mapa {
                 padding: 5px;
-                width: 1400px;
+                max-width: 1400px;
+                width: 100%;
                 height: 400px;
             }
         }
@@ -210,20 +204,19 @@ main {
         }
     }
 
+
 }
 /*Impresiones cierra*/
 
 /*Productos abre*/
 .sector-principal {
-    width: 1200px;
-    margin: auto;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
     .banner-promo-filgo {
-        width: 1160px;
         img {
-            margin: 0 auto;
             margin-top: 10px;
-            width: 1160px;
+            max-width: 1350px;
+            width: 100%;
             border-radius: 10px;
         }
     }
@@ -232,14 +225,15 @@ main {
         margin-left: 1rem;
     }
     .prod-bootstrap {
-        width: 11rem;
+        max-width: 12rem;
     }
 }
 
 /*Productos cierra*/
 
 footer {
-    background-color: rgb(11, 109, 109);
+    margin-top: 1rem;
+    background-color:$colorprincipal;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -254,50 +248,6 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
-    main{
-        h2{
-            text-align: center;
-        }
-        .marcas{
-            .logos-marcas{
-                display: flex;
-                flex-wrap: wrap;
-                img{
-                    width: 10rem;
-                }
-            }
-        }
-        .productos{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            .producto {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 10rem;
-                flex-direction: column;
-                border: solid 1px grey;
-                border-radius: 5px;
-                overflow: hidden;
-                padding-bottom: 5px;
-            }
-        }
-    }
-    .sector-principal{
-        .banner-promo-filgo{
-            margin: auto;
-            justify-content: center;
-            img{
-            }
-        }
-    }
-}
+/*Responsive*/
 
-@media (min-width: 1400px) {
-    main {
-        width: 1400px;
-        margin: auto;
-    }
-  }
+@import './mediaqueries';

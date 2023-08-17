@@ -1,8 +1,12 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/*colores*/
+/*Tamaños*/
+/**/
 body {
   font-family: "Yantramanav", sans-serif;
   height: 100vh;
@@ -56,9 +60,6 @@ main {
           font-weight: normal; }
         main .productos .producto .producto-descripcion span {
           font-weight: bold; }
-  @media screen and (max-width: 576px) {
-    main h2 {
-      text-align: center; } }
   main .marcas {
     margin-bottom: 2rem; }
     main .marcas h2 {
@@ -89,7 +90,8 @@ main {
       grid-area: mapas; }
       main .container-contacto .mapas .mapa {
         padding: 5px;
-        width: 1400px;
+        max-width: 1400px;
+        width: 100%;
         height: 400px; }
     main .container-contacto .como-llegar {
       grid-area: como-llegar;
@@ -161,24 +163,22 @@ main {
 /*Impresiones cierra*/
 /*Productos abre*/
 .sector-principal {
-  width: 1200px;
-  margin: auto;
-  margin-bottom: 2rem; }
-  .sector-principal .banner-promo-filgo {
-    width: 1160px; }
-    .sector-principal .banner-promo-filgo img {
-      margin: 0 auto;
-      margin-top: 10px;
-      width: 1160px;
-      border-radius: 10px; }
+  display: flex;
+  flex-direction: column; }
+  .sector-principal .banner-promo-filgo img {
+    margin-top: 10px;
+    max-width: 1350px;
+    width: 100%;
+    border-radius: 10px; }
   .sector-principal h4 {
     margin-top: 1rem;
     margin-left: 1rem; }
   .sector-principal .prod-bootstrap {
-    width: 11rem; }
+    max-width: 12rem; }
 
 /*Productos cierra*/
 footer {
+  margin-top: 1rem;
   background-color: #0b6d6d;
   display: flex;
   justify-content: space-around;
@@ -191,32 +191,109 @@ footer {
       color: snow;
       text-decoration: none; }
 
+/*Responsive*/
 @media (max-width: 576px) {
-  main h2 {
-    text-align: center; }
-  main .marcas .logos-marcas {
-    display: flex;
-    flex-wrap: wrap; }
-    main .marcas .logos-marcas img {
-      width: 10rem; }
-  main .productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    main .productos .producto {
+  main {
+    /*Contacto*/ }
+    main h2 {
+      text-align: center; }
+    main .marcas .logos-marcas {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 10rem;
+      flex-wrap: wrap; }
+      main .marcas .logos-marcas img {
+        width: 10rem; }
+    main .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      main .productos .producto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        flex-direction: column;
+        border: solid 1px grey;
+        border-radius: 5px;
+        overflow: hidden;
+        padding-bottom: 5px; }
+    main .container-contacto {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "mapas" "como-llegar" "contactanos"; }
+      main .container-contacto .mapas {
+        grid-area: mapas; }
+        main .container-contacto .mapas .mapa {
+          width: 98%; }
+      main .container-contacto .como-llegar {
+        grid-area: como-llegar; }
+        main .container-contacto .como-llegar .cards-transporte {
+          display: flex;
+          flex-direction: column; }
+          main .container-contacto .como-llegar .cards-transporte .card-transporte {
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+            main .container-contacto .como-llegar .cards-transporte .card-transporte img {
+              padding-right: 5px;
+              width: 3rem; }
+      main .container-contacto .contactanos {
+        grid-area: contactanos; }
+        main .container-contacto .contactanos .cards-contactanos {
+          display: flex;
+          flex-direction: column; }
+          main .container-contacto .contactanos .cards-contactanos .card-contactanos {
+            margin: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+            main .container-contacto .contactanos .cards-contactanos .card-contactanos img {
+              padding-right: 5px;
+              width: 1.8rem; }
+    main footer {
+      margin-top: 1rem; }
+    main .nuestra-historia .d-flex {
+      flex-direction: column-reverse; }
+  /*Impresiones*/
+  .container {
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
+    .container .servicios-graficos .cards-servicios {
+      display: flex;
+      flex-direction: column; }
+      .container .servicios-graficos .cards-servicios .card-servicios {
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .container .servicios-graficos .cards-servicios .card-servicios img {
+          padding-right: 5px;
+          width: 1.8rem; }
+    .container .realizamos .cards-realizamos {
+      display: flex;
       flex-direction: column;
-      border: solid 1px grey;
-      border-radius: 5px;
-      overflow: hidden;
-      padding-bottom: 5px; }
+      justify-content: space-evenly; }
+      .container .realizamos .cards-realizamos .card-realizamos {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 10px; }
+        .container .realizamos .cards-realizamos .card-realizamos img {
+          padding-right: 5px;
+          width: 2.8rem; }
+  /*Productos*/
   .sector-principal .banner-promo-filgo {
     margin: auto;
-    justify-content: center; } }
+    justify-content: center; }
+  .sector-principal .prod-bootstrap {
+    width: 9rem; }
+  .sector-principal .banner .banner-impresiones {
+    width: 95%; } }
 
+/*Desktop*/
 @media (min-width: 1400px) {
   main {
     width: 1400px;
