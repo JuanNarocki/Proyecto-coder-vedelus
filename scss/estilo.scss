@@ -1,6 +1,5 @@
-@import './resets';
-@import './variables';
-
+@import "./resets";
+@import "./variables";
 
 body {
     font-family: "Yantramanav", sans-serif;
@@ -23,7 +22,6 @@ body {
     }
 }
 main {
-    
     flex-grow: 1;
     .foto-header {
         display: flex;
@@ -35,7 +33,7 @@ main {
     }
     .categorias-index {
         margin-top: 1rem;
-        border-bottom: 0.5px solid rgb(226, 226, 226);
+        border-bottom: $lineagris;
     }
     .productos {
         display: flex;
@@ -46,12 +44,12 @@ main {
             align-items: center;
             flex-direction: column;
             width: 210px;
-            border: solid 1px grey;
+            border: $borde-prod;
             border-radius: 5px;
             margin: 10px;
             padding-bottom: 5px;
-                &:hover{
-                    transform: $hoverproductos;
+            &:hover {
+                transform: $hoverproductos;
             }
             .producto-img {
                 justify-content: center;
@@ -71,21 +69,24 @@ main {
             }
         }
     }
-    .marcas{
+    .marcas {
         margin-bottom: 2rem;
-        h2{
-            border-bottom: 0.5px solid rgb(226, 226, 226);
+        h2 {
+            border-bottom: $lineagris;
         }
-        .logos-marcas{
+        .logos-marcas {
             display: flex;
-            justify-content: space-between;    
+            justify-content: space-between;
         }
     }
 
     /*Quienes somos abre*/
+    .quienes-somos{
+        margin-top: 1rem;
+    }
+    .nuestra-historia {
 
-    .card-quienes-somos {
-        margin-top: 2rem;
+        margin-top: 1rem;
         .card-body {
             display: flex;
             flex-direction: column;
@@ -95,7 +96,7 @@ main {
             }
         }
     }
-    .nuestra-historia {
+    .nuestro-objetivo {
         margin-top: 2rem;
     }
 
@@ -123,7 +124,7 @@ main {
         }
         .como-llegar {
             grid-area: como-llegar;
-            border-right: 1px solid grey;
+            border-right: $borde-prod;
             padding: 20px;
             .cards-transporte {
                 display: flex;
@@ -206,8 +207,6 @@ main {
             }
         }
     }
-
-
 }
 /*Impresiones cierra*/
 
@@ -229,7 +228,7 @@ main {
     }
     .prod-bootstrap {
         max-width: 12rem;
-        &:hover{
+        &:hover {
             transform: $hoverproductos;
         }
     }
@@ -239,7 +238,7 @@ main {
 
 footer {
     margin-top: 1rem;
-    background-color:$colorprincipal;
+    background-color: $colorprincipal;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -256,4 +255,4 @@ footer {
 
 /*Responsive*/
 
-@import './mediaqueries';
+@import "./mediaqueries";

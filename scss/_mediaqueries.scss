@@ -22,11 +22,15 @@
                 align-items: center;
                 width: 14rem;
                 flex-direction: column;
-                border: solid 1px grey;
+                border: $borde-prod;
                 border-radius: 5px;
                 overflow: hidden;
                 padding-bottom: 5px;
             }
+        }
+        .quienes-somos{
+            margin-top: 1rem;
+            text-align: center;
         }
 
         /*Contacto*/
@@ -41,6 +45,9 @@
                 "contactanos";
             .mapas {
                 grid-area: mapas;
+                h1{
+                    text-align: center;
+                }
                 .mapa {
                     width: 98%;
                 }
@@ -83,14 +90,13 @@
         footer {
             margin-top: 1rem;
         }
-        .nuestra-historia {
+        .nuestro-objetivo {
             .d-flex {
                 flex-direction: column-reverse;
             }
         }
-        
     }
-    
+
     /*Impresiones*/
     .container {
         margin: 0;

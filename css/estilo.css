@@ -5,7 +5,7 @@
 
 /*colores*/
 /*Animaciones*/
-/**/
+/*Bordes*/
 body {
   font-family: "Yantramanav", sans-serif;
   height: 100vh;
@@ -68,15 +68,17 @@ main {
     main .marcas .logos-marcas {
       display: flex;
       justify-content: space-between; }
-  main .card-quienes-somos {
-    margin-top: 2rem; }
-    main .card-quienes-somos .card-body {
+  main .quienes-somos {
+    margin-top: 1rem; }
+  main .nuestra-historia {
+    margin-top: 1rem; }
+    main .nuestra-historia .card-body {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      main .card-quienes-somos .card-body p {
+      main .nuestra-historia .card-body p {
         font-size: large; }
-  main .nuestra-historia {
+  main .nuestro-objetivo {
     margin-top: 2rem; }
   main .container-contacto {
     display: grid;
@@ -96,7 +98,7 @@ main {
         height: 400px; }
     main .container-contacto .como-llegar {
       grid-area: como-llegar;
-      border-right: 1px solid grey;
+      border-right: solid 1px grey;
       padding: 20px; }
       main .container-contacto .como-llegar .cards-transporte {
         display: flex;
@@ -219,6 +221,9 @@ footer {
         border-radius: 5px;
         overflow: hidden;
         padding-bottom: 5px; }
+    main .quienes-somos {
+      margin-top: 1rem;
+      text-align: center; }
     main .container-contacto {
       height: 100vh;
       display: grid;
@@ -227,6 +232,8 @@ footer {
       grid-template-areas: "mapas" "como-llegar" "contactanos"; }
       main .container-contacto .mapas {
         grid-area: mapas; }
+        main .container-contacto .mapas h1 {
+          text-align: center; }
         main .container-contacto .mapas .mapa {
           width: 98%; }
       main .container-contacto .como-llegar {
@@ -257,7 +264,7 @@ footer {
               width: 1.8rem; }
     main footer {
       margin-top: 1rem; }
-    main .nuestra-historia .d-flex {
+    main .nuestro-objetivo .d-flex {
       flex-direction: column-reverse; }
   /*Impresiones*/
   .container {
