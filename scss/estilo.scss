@@ -50,6 +50,9 @@ main {
             border-radius: 5px;
             margin: 10px;
             padding-bottom: 5px;
+                &:hover{
+                    transform: $hoverproductos;
+            }
             .producto-img {
                 justify-content: center;
                 align-items: center;
@@ -226,6 +229,9 @@ main {
     }
     .prod-bootstrap {
         max-width: 12rem;
+        &:hover{
+            transform: $hoverproductos;
+        }
     }
 }
 
