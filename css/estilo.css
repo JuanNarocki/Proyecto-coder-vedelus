@@ -107,6 +107,8 @@ main {
           display: flex;
           flex-direction: column;
           align-items: center; }
+          main .container-contacto .como-llegar .cards-transporte .card-transporte img {
+            width: 90px; }
     main .container-contacto .contactanos {
       grid-area: contactanos;
       padding: 20px; }
@@ -117,6 +119,8 @@ main {
           display: flex;
           flex-direction: column;
           align-items: center; }
+          main .container-contacto .contactanos .cards-contactanos .card-contactanos img {
+            width: 80px; }
 
 /*Impresiones abre*/
 .container {
@@ -186,15 +190,18 @@ footer {
   margin-top: 1rem;
   background-color: #0b6d6d;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px; }
   footer .footer {
+    align-self: center;
     display: flex;
-    align-items: center;
     color: snow; }
-    footer .footer a {
-      color: snow;
-      text-decoration: none; }
+    footer .footer h3 {
+      padding-top: 5px; }
+    footer .footer a img {
+      width: 40px; }
+  footer img {
+    width: 50px; }
 
 /*Responsive*/
 @media (max-width: 576px) {
