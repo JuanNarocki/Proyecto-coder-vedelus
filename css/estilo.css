@@ -98,9 +98,8 @@ main {
   main .container-contacto {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.2fr 1.8fr;
+    grid-template-rows: 1.2fr 0.7fr;
     gap: 0px 0px;
-    height: 85.5vh;
     grid-auto-flow: row;
     grid-template-areas: "mapas mapas" "como-llegar contactanos"; }
     main .container-contacto .mapas {
