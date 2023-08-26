@@ -58,17 +58,10 @@
         }
 
         /*Contacto*/
-        .container-contacto {
-            height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas:
-                "mapas"
-                "como-llegar"
-                "contactanos";
+        .container-contacto{
+            display: flex;
+            flex-direction: column;
             .mapas {
-                grid-area: mapas;
                 h1 {
                     text-align: center;
                 }
@@ -77,7 +70,6 @@
                 }
             }
             .como-llegar {
-                grid-area: como-llegar;
                 .cards-transporte {
                     display: flex;
                     flex-direction: column;
@@ -94,7 +86,6 @@
                 }
             }
             .contactanos {
-                grid-area: contactanos;
                 .cards-contactanos {
                     display: flex;
                     flex-direction: column;
@@ -102,10 +93,9 @@
                         margin: 5px;
                         display: flex;
                         flex-direction: row;
-                        align-items: center;
                         img {
                             padding-right: 5px;
-                            width: 1.8rem;
+                            width: 1.9rem;
                         }
                     }
                 }
@@ -167,20 +157,19 @@
             display: inline-block;
             margin: auto;
             justify-content: center;
-            img {
+
+            .botonprod {
+                position: relative;
+                top: 0.1rem;
+                right: -7em;
+                background-color: rgb(22, 155, 155);
+                color: white;
+                font-size: 1em;
+                padding: 1em 1.5em;
+                text-transform: uppercase;
+                border-color: white;
+                border-radius: 1.5em;
             }
-        .botonprod{
-            position: relative;
-            top: 0.1rem;
-            right: -7em;
-            background-color: $colorprincipal;
-            color: white;
-            font-size: 1em;
-            padding: 1em 1.5em;
-            text-transform: uppercase;
-            border-color: white;
-            border-radius: 1.5em;
-        }
         }
         .prod-bootstrap {
             width: 9rem;
