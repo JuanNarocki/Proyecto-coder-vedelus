@@ -9,3 +9,12 @@ $hoverproductos: scale(1.1, 1.1);
 /*Bordes*/
 $lineagris: 0.5px solid rgb(226, 226, 226);
 $borde-prod: solid 1px grey;
+
+@mixin boton ($bgcolor, $radius, $border){
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    color: snow;
+    background-color: $bgcolor;
+    border-radius: $radius;
+    border: $border;
+}

@@ -24,13 +24,28 @@ main {
   flex-grow: 1;
   /*Quienes somos abre*/
   /*Contacto abre*/ }
-  main .foto-header {
-    display: flex;
-    border: 5px #0b6d6d double;
-    align-content: end;
-    margin-top: 5px;
-    width: 98%;
-    height: auto; }
+  main .banner {
+    display: inline-block;
+    position: relative; }
+    main .banner .foto-header {
+      display: flex;
+      border: 5px #0b6d6d double;
+      align-content: end;
+      margin-top: 5px;
+      width: 98%;
+      height: auto; }
+    main .banner .botonhome {
+      padding: 0.5rem 1rem;
+      font-size: 18px;
+      color: snow;
+      background-color: #0b6d6d;
+      border-radius: 15px;
+      border: 1px solid white;
+      position: absolute;
+      bottom: 4em;
+      right: 4em;
+      text-transform: uppercase;
+      padding: 1em 1.5em; }
   main .categorias-index {
     margin-top: 1rem;
     border-bottom: 0.5px solid #e2e2e2; }
@@ -151,7 +166,8 @@ main {
         margin: 10px auto;
         align-items: center; }
         .container .servicios-graficos .cards-servicios .card-servicios img {
-          width: 70px; }
+          width: 70px;
+          margin-bottom: 10px; }
   .container .realizamos {
     grid-area: realizamos;
     margin-top: 1rem;
@@ -172,11 +188,26 @@ main {
 .sector-principal {
   display: flex;
   flex-direction: column; }
-  .sector-principal .banner-promo-filgo img {
-    margin-top: 10px;
-    max-width: 1350px;
-    width: 100%;
-    border-radius: 10px; }
+  .sector-principal .banner-promo-filgo {
+    display: inline-block;
+    position: relative; }
+    .sector-principal .banner-promo-filgo img {
+      margin-top: 10px;
+      max-width: 1350px;
+      width: 100%;
+      border-radius: 10px; }
+    .sector-principal .banner-promo-filgo .botonprod {
+      padding: 0.5rem 1rem;
+      font-size: 18px;
+      color: snow;
+      background-color: #169b9b;
+      border-radius: 15px;
+      border: 1px solid white;
+      position: absolute;
+      bottom: 3em;
+      right: 4em;
+      text-transform: uppercase;
+      padding: 1em 1.5em; }
   .sector-principal h4 {
     margin-top: 1rem;
     margin-left: 1rem; }
@@ -207,6 +238,27 @@ footer {
 @media (max-width: 576px) {
   main {
     /*Contacto*/ }
+    main .banner {
+      display: inline-block;
+      margin-bottom: 2em; }
+      main .banner .foto-header {
+        display: flex;
+        border: 5px #0b6d6d double;
+        align-content: end;
+        margin-top: 5px;
+        width: 98%;
+        height: auto; }
+      main .banner .botonhome {
+        position: relative;
+        top: 1.5rem;
+        right: -5em;
+        background-color: #0b6d6d;
+        color: white;
+        font-size: 1em;
+        padding: 1em 1.5em;
+        text-transform: uppercase;
+        border-color: white;
+        border-radius: 1.5em; }
     main h2 {
       text-align: center; }
     main .marcas .logos-marcas {
@@ -303,8 +355,20 @@ footer {
           width: 2.8rem; }
   /*Productos*/
   .sector-principal .banner-promo-filgo {
+    display: inline-block;
     margin: auto;
     justify-content: center; }
+    .sector-principal .banner-promo-filgo .botonprod {
+      position: relative;
+      top: 0.1rem;
+      right: -7em;
+      background-color: #0b6d6d;
+      color: white;
+      font-size: 1em;
+      padding: 1em 1.5em;
+      text-transform: uppercase;
+      border-color: white;
+      border-radius: 1.5em; }
   .sector-principal .prod-bootstrap {
     width: 9rem; }
   .sector-principal .banner .banner-impresiones {
