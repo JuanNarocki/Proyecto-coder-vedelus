@@ -23,26 +23,25 @@ body {
 }
 main {
     flex-grow: 1;
-    .banner{
+    .banner {
         display: inline-block;
         position: relative;
         .foto-header {
-        display: flex;
-        border: 5px $colorprincipal double;
-        align-content: end;
-        margin-top: 5px;
-        width: 98%;
-        height: auto;
-    }
-        .botonhome{
-            @include boton ($colorprincipal, 15px, 1px solid white)
+            display: flex;
+            border: 5px $colorprincipal double;
+            align-content: end;
+            margin-top: 5px;
+            width: 98%;
+            height: auto;
+        }
+        .botonhome {
+            @include boton($colorprincipal, 15px, 1px solid white); 
             position: absolute;
-            bottom:4em;
-            right:4em;
-            text-transform:uppercase;
-            padding:1em 1.5em;
-         }
-
+            bottom: 4em;
+            right: 4em;
+            text-transform: uppercase;
+            padding: 1em 1.5em;
+        }
     }
 
     .categorias-index {
@@ -95,11 +94,10 @@ main {
     }
 
     /*Quienes somos abre*/
-    .quienes-somos{
+    .quienes-somos {
         margin-top: 1rem;
     }
     .nuestra-historia {
-
         margin-top: 1rem;
         .card-body {
             display: flex;
@@ -144,7 +142,7 @@ main {
                 display: flex;
                 justify-content: space-around;
                 .card-transporte {
-                    img{
+                    img {
                         width: 90px;
                     }
                     display: flex;
@@ -160,7 +158,7 @@ main {
                 display: flex;
                 justify-content: space-around;
                 .card-contactanos {
-                    img{
+                    img {
                         width: 80px;
                     }
                     display: flex;
@@ -171,6 +169,7 @@ main {
         }
     }
 }
+
 /*Impresiones abre*/
 .container {
     display: grid;
@@ -244,13 +243,12 @@ main {
             width: 100%;
             border-radius: 10px;
         }
-        .botonprod{
-            @include boton (rgb(22, 155, 155), 15px, 1px solid white)
-            position: absolute;
-            bottom:3em;
-            right:4em;
-            text-transform:uppercase;
-            padding:1em 1.5em;  
+        .botonprod {
+            @include boton(rgb(22, 155, 155), 15px, 1px solid white) ;position: absolute;
+            bottom: 3em;
+            right: 4em;
+            text-transform: uppercase;
+            padding: 1em 1.5em;
         }
     }
     h4 {
@@ -277,20 +275,20 @@ footer {
         align-self: center;
         display: flex;
         color: snow;
-        h3{
+        h3 {
             padding-top: 5px;
         }
         a {
-            img{
+            img {
                 width: 40px;
             }
         }
     }
-    img{
+    img {
         width: 50px;
     }
 }
 
 /*Responsive*/
 
-@import './mediaqueries'
+@import "./mediaqueries";
